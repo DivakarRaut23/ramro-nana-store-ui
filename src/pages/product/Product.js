@@ -1,11 +1,13 @@
 import React from 'react'
 import ProductLayout from '../../components/layout/ProductLayout'
+import ProductCard from '../../components/products/ProductCard'
 
 const Product = () => {
     return (
         <div>
             <ProductLayout>
-                This is Product Page
+                <ProductCard />
+                <ProductCard />
             </ProductLayout>
             
         </div>

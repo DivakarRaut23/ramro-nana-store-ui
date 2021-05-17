@@ -4,8 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Menu, MenuItem } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,11 +28,17 @@ const classes = useStyles();
         <Typography  variant="h6" className={classes.title}>
             RN
           </Typography>
-          <IconButton  className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          <Menu KeepMounted open={true}>
+          <MenuItem href='/home' >Home</MenuItem>
+          <MenuItem href='/product' >Products</MenuItem>
+          <MenuItem href='/about-us' >About Us</MenuItem>
+          <MenuItem href='/contact-us' >Contact Us</MenuItem>
+
+          </Menu>
           
-          <Button color="inherit">Sign In</Button>
+
+          
+          <Button href='/login' color="inherit">Sign In</Button>
         </Toolbar>
       </AppBar>
     </div>

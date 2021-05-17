@@ -6,6 +6,7 @@ import SignUp from './pages/signUp/SignUp';
 import Home from './pages/home/Home';
 import AboutUs from './pages/about-us/AboutUs';
 import Product from './pages/product/Product';
+import ContactUs from './pages/contact-us/ContactUs';
 
 function App() {
   return (
@@ -18,13 +19,16 @@ function App() {
         <Route exact path="/about-us">
             <AboutUs />
         </Route>
+        <Route exact path="/contact-us">
+            <ContactUs />
+        </Route>
         <Route exact path="/product">
             <Product />
         </Route>
         <Route path="/login">
             <Login />
         </Route>
-        <Route path="/signup">
+        <Route path="/sign-up">
             <SignUp />
         </Route>
       </Switch>

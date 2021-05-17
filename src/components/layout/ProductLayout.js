@@ -27,11 +27,11 @@ const ProductLayout = ({children}) => {
         <Grid item xs={12}>
           <Paper className={classes.paper}><Header /> </Paper>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <Paper className={classes.paper}>This is a Filter section for Product</Paper>
         </Grid>
        
-        <Grid item xs={8}>
+        <Grid item xs={10}>
           <Paper className={classes.paper}>{children}</Paper>
         </Grid>
         <Grid item xs={12}>
