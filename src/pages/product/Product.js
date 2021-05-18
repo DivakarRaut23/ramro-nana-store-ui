@@ -7,7 +7,6 @@ const Product = () => {
         <div>
             <ProductLayout>
                 <ProductCard />
-                <ProductCard />
             </ProductLayout>
             
         </div>

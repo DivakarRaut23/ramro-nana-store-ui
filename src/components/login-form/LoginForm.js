@@ -24,7 +24,7 @@ const LoginForm = () => {
                         label="Save login details"
                     />
                     <Button type='submit' variant='contained' color='primary'>Login</Button>
-                    Not registered yet ? <Button href='/signup' variant='contained'> Register </Button>
+                    Not registered yet ? <Button href='/sign-up' variant='contained'> Register </Button>
                 </form>
 
            </Paper>
