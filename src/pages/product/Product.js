@@ -1,12 +1,12 @@
 import React from 'react'
 import ProductLayout from '../../components/layout/ProductLayout'
-import ProductCard from '../../components/products/ProductCard'
+import ProductList from '../../components/products/ProductList'
 
 const Product = () => {
     return (
         <div>
             <ProductLayout>
-                <ProductCard />
+                <ProductList />
             </ProductLayout>
             
         </div>

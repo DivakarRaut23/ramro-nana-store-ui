@@ -7,6 +7,7 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/about-us/AboutUs';
 import Product from './pages/product/Product';
 import ContactUs from './pages/contact-us/ContactUs';
+import DetailProduct from './pages/product/DetailProduct';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/product">
             <Product />
+        </Route>
+        <Route exact path="/product-detail">
+          <DetailProduct/>
         </Route>
         <Route path="/login">
             <Login />

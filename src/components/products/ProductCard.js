@@ -8,8 +8,9 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { ButtonBase } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,22 +31,25 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: green [500],
   },
 }));
 
-export default function ProductCard() {
+export default function ProductCard({children}) {
   const classes = useStyles();
 
+  console.log("k k aayeko cha ta data >>>" , children)
 
+  const categoryInitial = children.name.charAt(0)
 
 
   return (
     <Card className={classes.root}>
+      <ButtonBase></ButtonBase>
       <CardHeader
         avatar={
-          <Avatar aria-label="kurtha" className={classes.avatar}>
-            K
+          <Avatar aria-label="category" className={classes.avatar}>
+            {categoryInitial.toUpperCase()}
           </Avatar>
         }
         action={
@@ -55,17 +59,17 @@ export default function ProductCard() {
         </IconButton>
       </CardActions>
         }
-        title="Trending Nepali Kurtha"
-        subheader="$130"
+        title={children.name}
+        subheader={children.price}
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={children.images[0]}
         title="Nepali Kurtha"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This is very popular design for young girls
+          {children.description}
         </Typography>
       </CardContent>
       
