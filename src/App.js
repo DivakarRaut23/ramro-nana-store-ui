@@ -7,7 +7,11 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/about-us/AboutUs';
 import Product from './pages/product/Product';
 import ContactUs from './pages/contact-us/ContactUs';
+<<<<<<< HEAD
 import DetailProduct from './pages/product/DetailProduct';
+=======
+import Account from './components/account/Account';
+>>>>>>> 95d0221e29897b989059161290b13963eaa418a4
 
 function App() {
   return (
@@ -31,6 +35,9 @@ function App() {
         </Route>
         <Route path="/login">
             <Login />
+        </Route>
+        <Route path="/profile">
+            <Account />
         </Route>
         <Route path="/sign-up">
             <SignUp />
